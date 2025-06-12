@@ -9,7 +9,7 @@ load_dotenv()  # Loads .env if you use it
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
-client = OpenAI(api_key="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")  # Or directly paste key: api_key="sk-..."
+client = OpenAI(api_key= os.getenv("OPENAI_API_KEY"))  # Or directly paste key: api_key="sk-..."
 CORS(app)
 
 
