@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+VENV/
+*.env
+*.env.*
+
+# Flask & general
+instance/
+.webassets-cache
+*.db
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# React / Node.js
+
+# dotenv
+.env
+
+# Coverage / test
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# IDEs
+.idea/
+*.iml
+
