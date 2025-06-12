@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marketing Image Generator</title>
+    <style>
+        body { font-family: Arial; margin: 30px; }
+        img { max-width: 300px; margin: 10px; border: 1px solid #ccc; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h1>🪄 Marketing Campaign Image Generator</h1>
+    <form action="/generate" method="POST" enctype="multipart/form-data">
+        <label>Prompt:</label><br>
+        <input type="text" name="prompt" placeholder="e.g., modern tiles in bright room" size="60"><br><br>
+        <label>Upload Product Image:</label><br>
+        <input type="file" name="image"><br><br>
+        <input type="submit" value="Generate Image">
+    </form>
+
+    {% if uploaded_image_url %}
+        <h2>Uploaded Image:</h2>
+        <img src="{{ uploaded_image_url }}">
+    {% endif %}
+
+    {% if generated_image_url %}
+        <h2>Generated Image (Prompt: "{{ used_prompt }}"):</h2>
+        <img src="{{ generated_image_url }}">
+    {% endif %}
+</body>
+</html>

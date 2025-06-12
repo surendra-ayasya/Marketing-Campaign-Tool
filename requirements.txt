@@ -1,0 +1,4 @@
+Flask==2.3.3
+huggingface_hub==0.25.1
+Pillow==10.1.0
+Werkzeug==3.0.1
