@@ -28,6 +28,8 @@ instance/
 
 # React / Node.js
 
+# dotenv
+.env
 
 # Coverage / test
 htmlcov/
